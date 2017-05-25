@@ -14,6 +14,8 @@
 		6D0E82EB1ED6B5D8006B1D4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D0E82EA1ED6B5D8006B1D4D /* Assets.xcassets */; };
 		6D0E82EE1ED6B5D8006B1D4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D0E82EC1ED6B5D8006B1D4D /* LaunchScreen.storyboard */; };
 		6D0E82F91ED6B5D8006B1D4D /* YeahMinTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0E82F81ED6B5D8006B1D4D /* YeahMinTests.m */; };
+		77B99315FB21CBE3898E72F6 /* Pods_YeahMin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BC82A094A111C4A9636D494 /* Pods_YeahMin.framework */; };
+		FB7E94487E7C2B2420379A4F /* Pods_YeahMinTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F67E16365B3A9B9DDDB8FBB3 /* Pods_YeahMinTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		06FCAAA0325031CB59D09AA1 /* Pods-YeahMin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YeahMin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YeahMin/Pods-YeahMin.debug.xcconfig"; sourceTree = "<group>"; };
+		0FBB496EA256AC5162858DC6 /* Pods-YeahMin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YeahMin.release.xcconfig"; path = "Pods/Target Support Files/Pods-YeahMin/Pods-YeahMin.release.xcconfig"; sourceTree = "<group>"; };
+		1BC82A094A111C4A9636D494 /* Pods_YeahMin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YeahMin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D0E82DB1ED6B5D8006B1D4D /* YeahMin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YeahMin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D0E82DF1ED6B5D8006B1D4D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6D0E82E11ED6B5D8006B1D4D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -40,6 +45,9 @@
 		6D0E82F41ED6B5D8006B1D4D /* YeahMinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YeahMinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D0E82F81ED6B5D8006B1D4D /* YeahMinTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YeahMinTests.m; sourceTree = "<group>"; };
 		6D0E82FA1ED6B5D8006B1D4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE0A9B60FB29DDA80188C099 /* Pods-YeahMinTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YeahMinTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YeahMinTests/Pods-YeahMinTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E02A46B912B2EB5EC74715BA /* Pods-YeahMinTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YeahMinTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YeahMinTests/Pods-YeahMinTests.release.xcconfig"; sourceTree = "<group>"; };
+		F67E16365B3A9B9DDDB8FBB3 /* Pods_YeahMinTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YeahMinTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77B99315FB21CBE3898E72F6 /* Pods_YeahMin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,18 +63,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB7E94487E7C2B2420379A4F /* Pods_YeahMinTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		43EC6131883C40381ECCA378 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				06FCAAA0325031CB59D09AA1 /* Pods-YeahMin.debug.xcconfig */,
+				0FBB496EA256AC5162858DC6 /* Pods-YeahMin.release.xcconfig */,
+				DE0A9B60FB29DDA80188C099 /* Pods-YeahMinTests.debug.xcconfig */,
+				E02A46B912B2EB5EC74715BA /* Pods-YeahMinTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		50410EAD59AD0DDD236524B5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1BC82A094A111C4A9636D494 /* Pods_YeahMin.framework */,
+				F67E16365B3A9B9DDDB8FBB3 /* Pods_YeahMinTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		6D0E82D21ED6B5D8006B1D4D = {
 			isa = PBXGroup;
 			children = (
 				6D0E82DD1ED6B5D8006B1D4D /* YeahMin */,
 				6D0E82F71ED6B5D8006B1D4D /* YeahMinTests */,
 				6D0E82DC1ED6B5D8006B1D4D /* Products */,
+				43EC6131883C40381ECCA378 /* Pods */,
+				50410EAD59AD0DDD236524B5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -118,9 +150,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6D0E82FD1ED6B5D8006B1D4D /* Build configuration list for PBXNativeTarget "YeahMin" */;
 			buildPhases = (
+				1A2F80C9EB48A49A4DA0C92B /* [CP] Check Pods Manifest.lock */,
 				6D0E82D71ED6B5D8006B1D4D /* Sources */,
 				6D0E82D81ED6B5D8006B1D4D /* Frameworks */,
 				6D0E82D91ED6B5D8006B1D4D /* Resources */,
+				5B1070C4FEF41586B8ACA5A5 /* [CP] Embed Pods Frameworks */,
+				53A87A446E8BA9E8510F317E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -135,9 +170,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6D0E83001ED6B5D8006B1D4D /* Build configuration list for PBXNativeTarget "YeahMinTests" */;
 			buildPhases = (
+				D1AAA074F28578A05AB83AC6 /* [CP] Check Pods Manifest.lock */,
 				6D0E82F01ED6B5D8006B1D4D /* Sources */,
 				6D0E82F11ED6B5D8006B1D4D /* Frameworks */,
 				6D0E82F21ED6B5D8006B1D4D /* Resources */,
+				D455D15A0CE0F927FB5BF5A1 /* [CP] Embed Pods Frameworks */,
+				A488BF5F8800A1903D528FEB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -208,6 +246,99 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1A2F80C9EB48A49A4DA0C92B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		53A87A446E8BA9E8510F317E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YeahMin/Pods-YeahMin-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5B1070C4FEF41586B8ACA5A5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YeahMin/Pods-YeahMin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A488BF5F8800A1903D528FEB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YeahMinTests/Pods-YeahMinTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1AAA074F28578A05AB83AC6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D455D15A0CE0F927FB5BF5A1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YeahMinTests/Pods-YeahMinTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6D0E82D71ED6B5D8006B1D4D /* Sources */ = {
@@ -348,10 +479,12 @@
 		};
 		6D0E82FE1ED6B5D8006B1D4D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06FCAAA0325031CB59D09AA1 /* Pods-YeahMin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = A87J69XM38;
 				INFOPLIST_FILE = YeahMin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.YeahMin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -360,10 +493,12 @@
 		};
 		6D0E82FF1ED6B5D8006B1D4D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0FBB496EA256AC5162858DC6 /* Pods-YeahMin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = A87J69XM38;
 				INFOPLIST_FILE = YeahMin/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.YeahMin;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -372,6 +507,7 @@
 		};
 		6D0E83011ED6B5D8006B1D4D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DE0A9B60FB29DDA80188C099 /* Pods-YeahMinTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = YeahMinTests/Info.plist;
@@ -384,6 +520,7 @@
 		};
 		6D0E83021ED6B5D8006B1D4D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E02A46B912B2EB5EC74715BA /* Pods-YeahMinTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = YeahMinTests/Info.plist;
