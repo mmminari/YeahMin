@@ -7,31 +7,92 @@
 //
 
 #import "MainViewController.h"
+#import "MainCell.h"
 
 @interface MainViewController ()
+
+@property (weak, nonatomic) IBOutlet UIPageControl *pageController;
+
+
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *alcTopOfCollectionView;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *alcHeightOfNaviBar;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *alcHeightOfCollectionView;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *alcLeadingOfAlarm;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *alcHeightOfAlarm;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *alcWidthOfAlarm;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *alcHeightOfMenu;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *alcWidthOfMenu;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *alcTrailingOfMenu;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *alcHeightOfLogo;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *alcWidthOfLogo;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *alcTopOfPageController;
 
 @end
 
 @implementation MainViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+    [self setLayout];
+    
+    self.pageController.numberOfPages = 5;
+    
+    self.navigationController.navigationBarHidden = YES;
+    
+    [self.collectionView registerNib:[UINib nibWithNibName:@"MainCell" bundle:nil] forCellWithReuseIdentifier:@"MainCell"];
+
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - Private Method
+
+- (void)setLayout
+{
+    self.alcHeightOfNaviBar.constant = WRATIO(80.0f);
+    self.alcTopOfCollectionView.constant = WRATIO(30.0f);
+    self.alcHeightOfCollectionView.constant = WRATIO(462.0f);
+    self.alcLeadingOfAlarm.constant = WRATIO(57.0f);
+    self.alcHeightOfAlarm.constant = WRATIO(20.0f);
+    self.alcWidthOfAlarm.constant = WRATIO(17.0f);
+    self.alcHeightOfMenu.constant = WRATIO(16.0f);
+    self.alcWidthOfMenu.constant = WRATIO(16.0f);
+    self.alcTrailingOfMenu.constant = WRATIO(57.0f);
+    self.alcHeightOfLogo.constant = WRATIO(15.0f);
+    self.alcWidthOfLogo.constant = WRATIO(60.0f);
+    self.alcTopOfPageController.constant = WRATIO(44.0f);
 }
 
-/*
-#pragma mark - Navigation
+#pragma mark - UICollectionView
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
+{
+    NSInteger result = 0;
+    
+    result = 5;
+    
+    return result;
 }
-*/
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(nonnull NSIndexPath *)indexPath
+{
+    MainCell *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:@"MainCell" forIndexPath:indexPath];
+    
+    
+    return cell;
+}
+
+- (CGSize)collectionView:(UICollectionView *)collectionView
+                  layout:(UICollectionViewLayout *)collectionViewLayout
+  sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    CGSize result = CGSizeZero;
+    
+    result = CGSizeMake(DEVICE_WIDTH, WRATIO(462.0f));
+    
+    return result;
+}
+
 
 @end
