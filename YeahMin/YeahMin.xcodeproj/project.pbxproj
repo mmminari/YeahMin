@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		6D0E82E01ED6B5D8006B1D4D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0E82DF1ED6B5D8006B1D4D /* main.m */; };
 		6D0E82E31ED6B5D8006B1D4D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0E82E21ED6B5D8006B1D4D /* AppDelegate.m */; };
-		6D0E82E61ED6B5D8006B1D4D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0E82E51ED6B5D8006B1D4D /* ViewController.m */; };
 		6D0E82E91ED6B5D8006B1D4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D0E82E71ED6B5D8006B1D4D /* Main.storyboard */; };
 		6D0E82EB1ED6B5D8006B1D4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D0E82EA1ED6B5D8006B1D4D /* Assets.xcassets */; };
 		6D0E82EE1ED6B5D8006B1D4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6D0E82EC1ED6B5D8006B1D4D /* LaunchScreen.storyboard */; };
 		6D0E82F91ED6B5D8006B1D4D /* YeahMinTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0E82F81ED6B5D8006B1D4D /* YeahMinTests.m */; };
+		6D0E83051ED6BFD8006B1D4D /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0E83041ED6BFD8006B1D4D /* MainViewController.m */; };
+		6D0E83081ED6C06E006B1D4D /* FriendListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0E83071ED6C06E006B1D4D /* FriendListViewController.m */; };
+		6D0E830B1ED6C08C006B1D4D /* AddFriendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0E830A1ED6C08C006B1D4D /* AddFriendViewController.m */; };
+		6D0E830E1ED6C0AA006B1D4D /* FriendDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D0E830D1ED6C0AA006B1D4D /* FriendDetailViewController.m */; };
 		77B99315FB21CBE3898E72F6 /* Pods_YeahMin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BC82A094A111C4A9636D494 /* Pods_YeahMin.framework */; };
 		FB7E94487E7C2B2420379A4F /* Pods_YeahMinTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F67E16365B3A9B9DDDB8FBB3 /* Pods_YeahMinTests.framework */; };
 /* End PBXBuildFile section */
@@ -36,8 +39,6 @@
 		6D0E82DF1ED6B5D8006B1D4D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6D0E82E11ED6B5D8006B1D4D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6D0E82E21ED6B5D8006B1D4D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6D0E82E41ED6B5D8006B1D4D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6D0E82E51ED6B5D8006B1D4D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		6D0E82E81ED6B5D8006B1D4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6D0E82EA1ED6B5D8006B1D4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6D0E82ED1ED6B5D8006B1D4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -45,6 +46,14 @@
 		6D0E82F41ED6B5D8006B1D4D /* YeahMinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YeahMinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D0E82F81ED6B5D8006B1D4D /* YeahMinTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YeahMinTests.m; sourceTree = "<group>"; };
 		6D0E82FA1ED6B5D8006B1D4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6D0E83031ED6BFD8006B1D4D /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		6D0E83041ED6BFD8006B1D4D /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		6D0E83061ED6C06E006B1D4D /* FriendListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendListViewController.h; sourceTree = "<group>"; };
+		6D0E83071ED6C06E006B1D4D /* FriendListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendListViewController.m; sourceTree = "<group>"; };
+		6D0E83091ED6C08C006B1D4D /* AddFriendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddFriendViewController.h; sourceTree = "<group>"; };
+		6D0E830A1ED6C08C006B1D4D /* AddFriendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddFriendViewController.m; sourceTree = "<group>"; };
+		6D0E830C1ED6C0AA006B1D4D /* FriendDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendDetailViewController.h; sourceTree = "<group>"; };
+		6D0E830D1ED6C0AA006B1D4D /* FriendDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendDetailViewController.m; sourceTree = "<group>"; };
 		DE0A9B60FB29DDA80188C099 /* Pods-YeahMinTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YeahMinTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YeahMinTests/Pods-YeahMinTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E02A46B912B2EB5EC74715BA /* Pods-YeahMinTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YeahMinTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YeahMinTests/Pods-YeahMinTests.release.xcconfig"; sourceTree = "<group>"; };
 		F67E16365B3A9B9DDDB8FBB3 /* Pods_YeahMinTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YeahMinTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,13 +124,19 @@
 			children = (
 				6D0E82E11ED6B5D8006B1D4D /* AppDelegate.h */,
 				6D0E82E21ED6B5D8006B1D4D /* AppDelegate.m */,
-				6D0E82E41ED6B5D8006B1D4D /* ViewController.h */,
-				6D0E82E51ED6B5D8006B1D4D /* ViewController.m */,
 				6D0E82E71ED6B5D8006B1D4D /* Main.storyboard */,
+				6D0E83031ED6BFD8006B1D4D /* MainViewController.h */,
+				6D0E83041ED6BFD8006B1D4D /* MainViewController.m */,
 				6D0E82EA1ED6B5D8006B1D4D /* Assets.xcassets */,
 				6D0E82EC1ED6B5D8006B1D4D /* LaunchScreen.storyboard */,
 				6D0E82EF1ED6B5D8006B1D4D /* Info.plist */,
 				6D0E82DE1ED6B5D8006B1D4D /* Supporting Files */,
+				6D0E83061ED6C06E006B1D4D /* FriendListViewController.h */,
+				6D0E83071ED6C06E006B1D4D /* FriendListViewController.m */,
+				6D0E83091ED6C08C006B1D4D /* AddFriendViewController.h */,
+				6D0E830A1ED6C08C006B1D4D /* AddFriendViewController.m */,
+				6D0E830C1ED6C0AA006B1D4D /* FriendDetailViewController.h */,
+				6D0E830D1ED6C0AA006B1D4D /* FriendDetailViewController.m */,
 			);
 			path = YeahMin;
 			sourceTree = "<group>";
@@ -345,9 +360,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D0E82E61ED6B5D8006B1D4D /* ViewController.m in Sources */,
+				6D0E83081ED6C06E006B1D4D /* FriendListViewController.m in Sources */,
 				6D0E82E31ED6B5D8006B1D4D /* AppDelegate.m in Sources */,
+				6D0E83051ED6BFD8006B1D4D /* MainViewController.m in Sources */,
+				6D0E830E1ED6C0AA006B1D4D /* FriendDetailViewController.m in Sources */,
 				6D0E82E01ED6B5D8006B1D4D /* main.m in Sources */,
+				6D0E830B1ED6C08C006B1D4D /* AddFriendViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -550,6 +568,7 @@
 				6D0E82FF1ED6B5D8006B1D4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6D0E83001ED6B5D8006B1D4D /* Build configuration list for PBXNativeTarget "YeahMinTests" */ = {
 			isa = XCConfigurationList;
@@ -558,6 +577,7 @@
 				6D0E83021ED6B5D8006B1D4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

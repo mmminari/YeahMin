@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  AddFriendViewController.h
 //  YeahMin
 //
 //  Created by 김민아 on 2017. 5. 25..
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface AddFriendViewController : UIViewController
 
 @end
-
