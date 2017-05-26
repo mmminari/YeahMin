@@ -213,6 +213,9 @@
                             <constraint firstAttribute="trailing" secondItem="79d-FJ-iAt" secondAttribute="trailing" id="tPT-24-q3j"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="alcHeightOfNaviBar" destination="89B-AH-wSE" id="6Zp-CC-i4l"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OJ4-N0-QqC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -385,6 +388,9 @@
                             <constraint firstItem="MnA-of-KIB" firstAttribute="top" secondItem="lrn-dx-dSn" secondAttribute="top" constant="20" id="hMB-qA-gOC"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="alcHeightOfNaviBar" destination="atk-4E-Ln2" id="x1Y-Ur-mh2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kNm-An-WwO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

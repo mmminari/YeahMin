@@ -9,6 +9,7 @@
 #import "FriendDetailViewController.h"
 
 @interface FriendDetailViewController ()
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *alcHeightOfNaviBar;
 
 @end
 
@@ -17,6 +18,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [self setLayout];
+    
+}
+
+- (void)setLayout
+{
+    self.alcHeightOfNaviBar.constant = WRATIO(80.0f);
     
 }
 

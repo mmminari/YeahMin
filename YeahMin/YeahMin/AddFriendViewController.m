@@ -9,6 +9,7 @@
 #import "AddFriendViewController.h"
 
 @interface AddFriendViewController ()
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *alcHeightOfNaviBar;
 
 @end
 
@@ -17,9 +18,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+    
+    [self setLayout];
+    
 }
 
+- (void)setLayout
+{
+    self.alcHeightOfNaviBar.constant = WRATIO(80.0f);
+    
+}
 #pragma mark - User Action
 - (IBAction)didTouchBackButton:(UIButton *)sender
 {
