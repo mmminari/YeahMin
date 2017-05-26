@@ -46,6 +46,8 @@
 		6D0E834B1ED6DB04006B1D4D /* nonheart.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D0E83321ED6DB04006B1D4D /* nonheart.png */; };
 		6D0E834C1ED6DB04006B1D4D /* outline.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D0E83331ED6DB04006B1D4D /* outline.png */; };
 		6D0E834D1ED6DB04006B1D4D /* ssh.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D0E83341ED6DB04006B1D4D /* ssh.png */; };
+		6D5B2DD71ED7F3C900F6F7C8 /* AlarmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5B2DD51ED7F3C900F6F7C8 /* AlarmViewController.m */; };
+		6D5B2DD81ED7F3C900F6F7C8 /* AlarmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D5B2DD61ED7F3C900F6F7C8 /* AlarmViewController.xib */; };
 		77B99315FB21CBE3898E72F6 /* Pods_YeahMin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BC82A094A111C4A9636D494 /* Pods_YeahMin.framework */; };
 		FB7E94487E7C2B2420379A4F /* Pods_YeahMinTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F67E16365B3A9B9DDDB8FBB3 /* Pods_YeahMinTests.framework */; };
 /* End PBXBuildFile section */
@@ -116,6 +118,9 @@
 		6D0E83321ED6DB04006B1D4D /* nonheart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nonheart.png; sourceTree = "<group>"; };
 		6D0E83331ED6DB04006B1D4D /* outline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = outline.png; sourceTree = "<group>"; };
 		6D0E83341ED6DB04006B1D4D /* ssh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ssh.png; sourceTree = "<group>"; };
+		6D5B2DD41ED7F3C900F6F7C8 /* AlarmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlarmViewController.h; sourceTree = "<group>"; };
+		6D5B2DD51ED7F3C900F6F7C8 /* AlarmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmViewController.m; sourceTree = "<group>"; };
+		6D5B2DD61ED7F3C900F6F7C8 /* AlarmViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlarmViewController.xib; sourceTree = "<group>"; };
 		DE0A9B60FB29DDA80188C099 /* Pods-YeahMinTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YeahMinTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YeahMinTests/Pods-YeahMinTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E02A46B912B2EB5EC74715BA /* Pods-YeahMinTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YeahMinTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YeahMinTests/Pods-YeahMinTests.release.xcconfig"; sourceTree = "<group>"; };
 		F67E16365B3A9B9DDDB8FBB3 /* Pods_YeahMinTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YeahMinTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -197,6 +202,9 @@
 				6D0E83161ED6CF75006B1D4D /* MainCell.h */,
 				6D0E83171ED6CF75006B1D4D /* MainCell.m */,
 				6D0E83181ED6CF75006B1D4D /* MainCell.xib */,
+				6D5B2DD41ED7F3C900F6F7C8 /* AlarmViewController.h */,
+				6D5B2DD51ED7F3C900F6F7C8 /* AlarmViewController.m */,
+				6D5B2DD61ED7F3C900F6F7C8 /* AlarmViewController.xib */,
 				6D0E83061ED6C06E006B1D4D /* FriendListViewController.h */,
 				6D0E83071ED6C06E006B1D4D /* FriendListViewController.m */,
 				6D0E83091ED6C08C006B1D4D /* AddFriendViewController.h */,
@@ -350,6 +358,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D5B2DD81ED7F3C900F6F7C8 /* AlarmViewController.xib in Resources */,
 				6D0E83401ED6DB04006B1D4D /* heart.png in Resources */,
 				6D0E83471ED6DB04006B1D4D /* maincard_background.png in Resources */,
 				6D0E834B1ED6DB04006B1D4D /* nonheart.png in Resources */,
@@ -495,6 +504,7 @@
 				6D0E83051ED6BFD8006B1D4D /* MainViewController.m in Sources */,
 				6D0E83141ED6C311006B1D4D /* LibraryClass.m in Sources */,
 				6D0E830E1ED6C0AA006B1D4D /* FriendDetailViewController.m in Sources */,
+				6D5B2DD71ED7F3C900F6F7C8 /* AlarmViewController.m in Sources */,
 				6D0E82E01ED6B5D8006B1D4D /* main.m in Sources */,
 				6D0E830B1ED6C08C006B1D4D /* AddFriendViewController.m in Sources */,
 				6D0E83191ED6CF75006B1D4D /* MainCell.m in Sources */,

@@ -8,8 +8,9 @@
 
 #import "MainViewController.h"
 #import "MainCell.h"
+#import "AlarmViewController.h"
 
-@interface MainViewController ()
+@interface MainViewController () <MainCellDelegate>
 
 @property (weak, nonatomic) IBOutlet UIPageControl *pageController;
 
@@ -64,6 +65,12 @@
     self.alcTopOfPageController.constant = WRATIO(44.0f);
 }
 
+- (void)setAlarmSideMenu
+{
+    
+    
+}
+
 #pragma mark - UICollectionView
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
@@ -79,6 +86,8 @@
 {
     MainCell *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:@"MainCell" forIndexPath:indexPath];
     
+    cell.delegate = self;
+    cell.cellIndex = indexPath.item;
     
     return cell;
 }
@@ -92,6 +101,28 @@
     result = CGSizeMake(DEVICE_WIDTH, WRATIO(462.0f));
     
     return result;
+}
+
+#pragma mark - UIScrollView
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
+{
+    MainCell *cell = self.collectionView.visibleCells.lastObject;
+    
+    NSInteger index = [self.collectionView indexPathForCell:cell].item;
+    
+    self.pageController.currentPage = index;
+    
+}
+
+#pragma mark - MainCellDelegate
+- (void)didTouchLikeButtonAtIndex:(NSInteger)index
+{
+    NSLog(@"didTouchLikeButtonAtIndex : %zd", index);
+}
+
+- (void)didTouchAddTasteButtonAtIndex:(NSInteger)index
+{
+    NSLog(@"didTouchAddTasteButtonAtIndex : %zd", index);
 }
 
 

@@ -8,6 +8,17 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol MainCellDelegate <NSObject>
+
+- (void)didTouchLikeButtonAtIndex:(NSInteger)index;
+- (void)didTouchAddTasteButtonAtIndex:(NSInteger)index;
+
+@end
+
 @interface MainCell : UICollectionViewCell
+
+@property (weak, nonatomic) id<MainCellDelegate> delegate;
+@property (assign, nonatomic) NSInteger cellIndex;
+
 
 @end
