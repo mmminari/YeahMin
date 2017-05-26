@@ -8,6 +8,8 @@
 
 #import "FriendListViewController.h"
 #import "ListCell.h"
+#import "AddFriendViewController.h"
+#import "FriendDetailViewController.h"
 
 #define CELL_MARGIN                                             20.0f
 
@@ -109,7 +111,21 @@ minimumLineSpacingForSectionAtIndex:(NSInteger)section
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
     NSLog(@"didSelectItemAtIndexPath : %zd", indexPath.item);
+
+    NSString *stid = nil;
     
+    if(indexPath.item == self.friendsList.count)
+    {
+        stid = @"stid-AddFriendVC";
+    }
+    else
+    {
+        stid = @"stid-FriendDetailVC";
+    }
+    
+    UIViewController *vc = [self.storyboard instantiateViewControllerWithIdentifier:stid];
+    
+    [self.navigationController pushViewController:vc animated:YES];
     
 }
 
