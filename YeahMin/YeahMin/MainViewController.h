@@ -11,4 +11,6 @@
 
 @interface MainViewController : LGSideMenuController
 
+@property (strong, nonatomic) LGSideMenuController *sideMenu;
+
 @end

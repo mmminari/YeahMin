@@ -9,6 +9,8 @@
 #import "MainViewController.h"
 #import "MainCell.h"
 #import "AlarmViewController.h"
+#import "FriendListViewController.h"
+
 
 @interface MainViewController () <MainCellDelegate>
 
@@ -65,10 +67,19 @@
     self.alcTopOfPageController.constant = WRATIO(44.0f);
 }
 
-- (void)setAlarmSideMenu
+
+#pragma mark - User Action
+
+- (IBAction)touchedAlarmButton:(UIButton *)sender
 {
+    [self.sideMenu showLeftViewAnimated:YES completionHandler:nil];
+}
+
+- (IBAction)touchedListButton:(UIButton *)sender
+{
+    FriendListViewController *listVC = [self.storyboard instantiateViewControllerWithIdentifier:@"stid-FriendListVC"];
     
-    
+    [self.navigationController pushViewController:listVC animated:YES];
 }
 
 #pragma mark - UICollectionView
@@ -84,10 +95,10 @@
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(nonnull NSIndexPath *)indexPath
 {
-    MainCell *cell = [self.collectionView dequeueReusableCellWithReuseIdentifier:@"MainCell" forIndexPath:indexPath];
-    
-    cell.delegate = self;
+    MainCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"MainCell" forIndexPath:indexPath];
+
     cell.cellIndex = indexPath.item;
+    cell.delegate = self;
     
     return cell;
 }
@@ -106,12 +117,9 @@
 #pragma mark - UIScrollView
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
 {
-    MainCell *cell = self.collectionView.visibleCells.lastObject;
-    
-    NSInteger index = [self.collectionView indexPathForCell:cell].item;
+    NSInteger index = scrollView.contentOffset.x / DEVICE_WIDTH;
     
     self.pageController.currentPage = index;
-    
 }
 
 #pragma mark - MainCellDelegate

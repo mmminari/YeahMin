@@ -109,8 +109,8 @@
 #pragma mark - MainCellDelegate
 
 - (IBAction)didTouchLikeButton:(UIButton *)sender
-{
-    if([self.delegate respondsToSelector:@selector(didTouchLikeButton:)])
+{   
+    if([self.delegate respondsToSelector:@selector(didTouchLikeButtonAtIndex:)])
     {
         [self.delegate didTouchLikeButtonAtIndex:self.cellIndex];
     }
@@ -118,7 +118,7 @@
 
 - (IBAction)didTouchAddTasteButton:(UIButton *)sender
 {
-    if([self.delegate respondsToSelector:@selector(didTouchAddTasteButton:)])
+    if([self.delegate respondsToSelector:@selector(didTouchAddTasteButtonAtIndex:)])
     {
         [self.delegate didTouchAddTasteButtonAtIndex:self.cellIndex];
     }
