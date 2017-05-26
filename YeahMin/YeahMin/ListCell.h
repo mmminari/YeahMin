@@ -10,4 +10,6 @@
 
 @interface ListCell : UICollectionViewCell
 
+- (void)showAddIcon:(BOOL)isLastCell;
+
 @end

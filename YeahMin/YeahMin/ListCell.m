@@ -12,11 +12,15 @@
 
 @property (weak, nonatomic) IBOutlet UIView *roundBackground;
 @property (weak, nonatomic) IBOutlet UIImageView *ivProfile;
+@property (weak, nonatomic) IBOutlet UIView *addView;
+
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *alcTopOfUserProfile;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *alcHeightOfUserProfile;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *alcWidthOfUserProfile;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *alcTopOfUserName;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *alcTopOfUserBirth;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *alcHeightOfAddIcon;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *alcWidthOfAddIcon;
 
 @end
 
@@ -37,6 +41,8 @@
     self.alcWidthOfUserProfile.constant = WRATIO(82.0f);
     self.alcTopOfUserName.constant = WRATIO(16.0f);
     self.alcTopOfUserBirth.constant = WRATIO(8.0f);
+    self.alcHeightOfAddIcon.constant = WRATIO(48.0f);
+    self.alcWidthOfAddIcon.constant = WRATIO(48.0f);
 }
 
 - (void)drawRect:(CGRect)rect
@@ -48,5 +54,10 @@
     self.ivProfile.layer.cornerRadius = WRATIO(76.0f);
 }
 
+#pragma mark - Public Method
+- (void)showAddIcon:(BOOL)isLastCell
+{
+    self.addView.hidden = !isLastCell;
+}
 
 @end

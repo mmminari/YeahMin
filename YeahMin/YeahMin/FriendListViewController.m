@@ -21,6 +21,8 @@
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *alcBottomOfCollectionView;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *alcTrailingOfCollectionView;
 
+@property (strong, nonatomic) NSArray *friendsList;
+
 @end
 
 @implementation FriendListViewController
@@ -34,6 +36,7 @@
     [self.collectionView registerNib:[UINib nibWithNibName:@"ListCell" bundle:nil] forCellWithReuseIdentifier:@"ListCell"];
     
     
+    self.friendsList = [NSArray arrayWithObjects:@"a", @"b",@"c", @"d",@"e",nil];
 
 }
 
@@ -60,7 +63,8 @@
 {
     NSInteger result = 0;
     
-    result = 5;
+    // 친구 추가 버튼
+    result = self.friendsList.count + 1;
     
     return result;
 }
@@ -69,6 +73,11 @@
 {
     ListCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"ListCell" forIndexPath:indexPath];
     
+    BOOL lastCell = (indexPath.item == self.friendsList.count)? YES : NO;
+    
+    NSLog(@"last cell : %zd", lastCell);
+    
+    [cell showAddIcon:lastCell];
     
     return cell;
 }
@@ -96,5 +105,13 @@ minimumLineSpacingForSectionAtIndex:(NSInteger)section
     
     return result;
 }
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"didSelectItemAtIndexPath : %zd", indexPath.item);
+    
+    
+}
+
 
 @end

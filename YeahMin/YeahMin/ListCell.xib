@@ -18,7 +18,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="168" height="182"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Br0-6f-it9">
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Br0-6f-it9">
                         <rect key="frame" x="0.0" y="0.0" width="168" height="182"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="outline.png" translatesAutoresizingMaskIntoConstraints="NO" id="ysE-8i-vK2">
@@ -43,16 +43,37 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="18h-0j-g3X">
+                                <rect key="frame" x="0.0" y="0.0" width="168" height="182"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="btn_add.png" translatesAutoresizingMaskIntoConstraints="NO" id="fEV-CT-P0m">
+                                        <rect key="frame" x="60" y="67" width="48" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="0U1-c5-HMA"/>
+                                            <constraint firstAttribute="width" constant="48" id="AJC-qg-23u"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="fEV-CT-P0m" firstAttribute="centerX" secondItem="18h-0j-g3X" secondAttribute="centerX" id="Sav-yy-cEI"/>
+                                    <constraint firstItem="fEV-CT-P0m" firstAttribute="centerY" secondItem="18h-0j-g3X" secondAttribute="centerY" id="lrF-cV-wE0"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="18h-0j-g3X" firstAttribute="leading" secondItem="Br0-6f-it9" secondAttribute="leading" id="1Yp-Sp-Qla"/>
                             <constraint firstItem="ysE-8i-vK2" firstAttribute="top" secondItem="Br0-6f-it9" secondAttribute="top" constant="16" id="1w3-Ms-m0O"/>
+                            <constraint firstAttribute="bottom" secondItem="18h-0j-g3X" secondAttribute="bottom" id="5ZF-ol-48q"/>
                             <constraint firstItem="57x-CV-BOk" firstAttribute="centerX" secondItem="Br0-6f-it9" secondAttribute="centerX" id="FF8-ay-lGg"/>
                             <constraint firstItem="SKi-nt-F0u" firstAttribute="leading" secondItem="ysE-8i-vK2" secondAttribute="leading" constant="3" id="FpD-kY-5WU"/>
                             <constraint firstItem="uo8-yE-kkp" firstAttribute="centerX" secondItem="Br0-6f-it9" secondAttribute="centerX" id="KP6-Rf-dJC"/>
                             <constraint firstItem="SKi-nt-F0u" firstAttribute="top" secondItem="ysE-8i-vK2" secondAttribute="top" constant="3" id="NaL-Cp-LZt"/>
                             <constraint firstItem="ysE-8i-vK2" firstAttribute="centerX" secondItem="Br0-6f-it9" secondAttribute="centerX" id="PcR-hQ-C9D"/>
                             <constraint firstItem="SKi-nt-F0u" firstAttribute="trailing" secondItem="ysE-8i-vK2" secondAttribute="trailing" constant="-3" id="Qp1-gh-DAH"/>
+                            <constraint firstAttribute="trailing" secondItem="18h-0j-g3X" secondAttribute="trailing" id="Tv5-k7-McX"/>
+                            <constraint firstItem="18h-0j-g3X" firstAttribute="top" secondItem="Br0-6f-it9" secondAttribute="top" id="VZL-KV-29k"/>
                             <constraint firstItem="uo8-yE-kkp" firstAttribute="top" secondItem="ysE-8i-vK2" secondAttribute="bottom" constant="16" id="nI8-LR-1Sn"/>
                             <constraint firstItem="SKi-nt-F0u" firstAttribute="bottom" secondItem="ysE-8i-vK2" secondAttribute="bottom" constant="-3" id="pnu-jR-Skj"/>
                             <constraint firstItem="57x-CV-BOk" firstAttribute="top" secondItem="uo8-yE-kkp" secondAttribute="bottom" constant="8" id="vOe-4s-z66"/>
@@ -68,10 +89,13 @@
             </constraints>
             <size key="customSize" width="168" height="182"/>
             <connections>
+                <outlet property="addView" destination="18h-0j-g3X" id="H53-Uf-473"/>
+                <outlet property="alcHeightOfAddIcon" destination="0U1-c5-HMA" id="ZDm-GV-MAw"/>
                 <outlet property="alcHeightOfUserProfile" destination="i5A-ev-Bha" id="4nT-jR-FWo"/>
                 <outlet property="alcTopOfUserBirth" destination="vOe-4s-z66" id="ffA-1L-uw7"/>
                 <outlet property="alcTopOfUserName" destination="nI8-LR-1Sn" id="CNl-l8-2P9"/>
                 <outlet property="alcTopOfUserProfile" destination="1w3-Ms-m0O" id="1VU-zL-gpA"/>
+                <outlet property="alcWidthOfAddIcon" destination="AJC-qg-23u" id="3bZ-bw-JS3"/>
                 <outlet property="alcWidthOfUserProfile" destination="Axu-MA-XHh" id="Da9-Gj-4pt"/>
                 <outlet property="ivProfile" destination="SKi-nt-F0u" id="0V1-YA-zJl"/>
                 <outlet property="roundBackground" destination="Br0-6f-it9" id="bu3-hl-cUp"/>
@@ -80,6 +104,7 @@
         </collectionViewCell>
     </objects>
     <resources>
+        <image name="btn_add.png" width="95" height="96"/>
         <image name="outline.png" width="183" height="183"/>
     </resources>
 </document>
