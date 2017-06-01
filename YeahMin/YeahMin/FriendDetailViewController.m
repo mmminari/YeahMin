@@ -10,6 +10,7 @@
 
 @interface FriendDetailViewController ()
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *alcHeightOfNaviBar;
+@property (weak, nonatomic) IBOutlet UILabel *lbProfile;
 
 @end
 
@@ -26,6 +27,9 @@
 - (void)setLayout
 {
     self.alcHeightOfNaviBar.constant = WRATIO(80.0f);
+    
+    
+    self.lbProfile.font = [UIFont fontWithName:@"BradleyHandITCTT-Bold" size:WRATIO(10.0f)];
     
 }
 
