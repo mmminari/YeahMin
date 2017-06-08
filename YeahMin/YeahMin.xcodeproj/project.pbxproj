@@ -46,6 +46,7 @@
 		6D0E834B1ED6DB04006B1D4D /* nonheart.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D0E83321ED6DB04006B1D4D /* nonheart.png */; };
 		6D0E834C1ED6DB04006B1D4D /* outline.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D0E83331ED6DB04006B1D4D /* outline.png */; };
 		6D0E834D1ED6DB04006B1D4D /* ssh.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D0E83341ED6DB04006B1D4D /* ssh.png */; };
+		6D42E2E21EE015E90037B0C3 /* YRCoverFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D42E2E11EE015E90037B0C3 /* YRCoverFlowLayout.m */; };
 		6D5B2DD71ED7F3C900F6F7C8 /* AlarmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5B2DD51ED7F3C900F6F7C8 /* AlarmViewController.m */; };
 		6D5B2DD81ED7F3C900F6F7C8 /* AlarmViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D5B2DD61ED7F3C900F6F7C8 /* AlarmViewController.xib */; };
 		6D5B2DDB1ED7FAC900F6F7C8 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5B2DDA1ED7FAC900F6F7C8 /* BaseViewController.m */; };
@@ -121,6 +122,8 @@
 		6D0E83321ED6DB04006B1D4D /* nonheart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nonheart.png; sourceTree = "<group>"; };
 		6D0E83331ED6DB04006B1D4D /* outline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = outline.png; sourceTree = "<group>"; };
 		6D0E83341ED6DB04006B1D4D /* ssh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ssh.png; sourceTree = "<group>"; };
+		6D42E2E01EE015E90037B0C3 /* YRCoverFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRCoverFlowLayout.h; sourceTree = "<group>"; };
+		6D42E2E11EE015E90037B0C3 /* YRCoverFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRCoverFlowLayout.m; sourceTree = "<group>"; };
 		6D5B2DD41ED7F3C900F6F7C8 /* AlarmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlarmViewController.h; sourceTree = "<group>"; };
 		6D5B2DD51ED7F3C900F6F7C8 /* AlarmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlarmViewController.m; sourceTree = "<group>"; };
 		6D5B2DD61ED7F3C900F6F7C8 /* AlarmViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlarmViewController.xib; sourceTree = "<group>"; };
@@ -197,6 +200,8 @@
 		6D0E82DD1ED6B5D8006B1D4D /* YeahMin */ = {
 			isa = PBXGroup;
 			children = (
+				6D42E2E01EE015E90037B0C3 /* YRCoverFlowLayout.h */,
+				6D42E2E11EE015E90037B0C3 /* YRCoverFlowLayout.m */,
 				6D0E831B1ED6DB04006B1D4D /* Resource */,
 				6D0E82E11ED6B5D8006B1D4D /* AppDelegate.h */,
 				6D0E82E21ED6B5D8006B1D4D /* AppDelegate.m */,
@@ -523,6 +528,7 @@
 				6D5B2DD71ED7F3C900F6F7C8 /* AlarmViewController.m in Sources */,
 				6D0E82E01ED6B5D8006B1D4D /* main.m in Sources */,
 				6D0E830B1ED6C08C006B1D4D /* AddFriendViewController.m in Sources */,
+				6D42E2E21EE015E90037B0C3 /* YRCoverFlowLayout.m in Sources */,
 				6D0E83191ED6CF75006B1D4D /* MainCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

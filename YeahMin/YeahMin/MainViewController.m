@@ -10,12 +10,13 @@
 #import "MainCell.h"
 #import "AlarmViewController.h"
 #import "FriendListViewController.h"
+#import "YRCoverFlowLayout.h"
+
 
 
 @interface MainViewController () <MainCellDelegate>
 
 @property (weak, nonatomic) IBOutlet UIPageControl *pageController;
-
 
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *alcTopOfCollectionView;
@@ -110,6 +111,8 @@
     CGSize result = CGSizeZero;
     
     result = CGSizeMake(DEVICE_WIDTH, WRATIO(462.0f));
+    
+    collectionView.contentSize = result;
     
     return result;
 }
